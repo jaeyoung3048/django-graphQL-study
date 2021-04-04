@@ -4,7 +4,7 @@ from django.conf import settings
 
 
 def encode_jwt(data):
-    return jwt.encode(data, settings.SECRET_KEY, algorithm="HS256").decode("utf-8")
+    return jwt.encode(data, settings.SECRET_KEY, algorithm="HS256")
 
 
 def decode_jwt(access_token):
