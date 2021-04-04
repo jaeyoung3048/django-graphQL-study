@@ -26,10 +26,6 @@ class User(AbstractBaseUser, PermissionsMixin):
         default=False
     )
 
-    refresh_token = models.TextField(
-        null=True,
-        default=None,
-    )
 
     EMAIL_FIELDS = 'email'
     USERNAME_FIELD = 'email'

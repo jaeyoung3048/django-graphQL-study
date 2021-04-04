@@ -9,7 +9,8 @@ class Token(models.Model):
     user = models.OneToOneField(
         User,
         related_name='token',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        primary_key=True
     )
 
     created_at = models.DateTimeField(
